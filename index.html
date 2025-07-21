@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fkremariam Nigatu - Software Developer Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#hero" class="logo">Fkremariam Nigatu</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section"> 
+        <div class="container">
+            <div class="hero-content reveal-on-scroll"> 
+                <p class="greeting">Hi there, I'm</p>
+                <h1>Fkremariam Nigatu</h1>
+                <p class="tagline">A passionate Full-stack Software Developer crafting seamless user experiences and robust backend solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <img src="images/developer.png" alt="Abstract developer illustration" class="hero-illustration">
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider"> 
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">About Me</h2>
+            <div class="about-grid reveal-on-scroll">
+                <div class="profile-picture">
+                    <img src="images/my-photo.jpg" alt="Fkremariam Nigatu's Photo" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>I'm a software developer with 2+ years of experience specializing in Full-Stack JavaScript, Cloud Technologies, and Data Science. My journey in tech began with a fascination for web and mobile development and I thrive on transforming complex problems into elegant, efficient, and user-friendly software solutions.</p>
+                    <p>I'm deeply passionate about building scalable web applications and contributing to open-source. When I'm not immersed in code, you can find me experimenting with smart home tech or mastering a new recipe.</p>
+                    <a href="my-resume.pdf" class="btn btn-download" download>Download Resume (PDF)</a>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <hr class="section-divider">
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">My Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/react-icon.png" alt="React Icon"> 
+                    <h3>Frontend Development</h3>
+                    <p>React, Next.js, Vue.js, HTML5, CSS3, SCSS, Tailwind CSS</p>
+                </div>
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/nodejs.png" alt="Node.js Icon">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, Python, Django, Flask, Ruby on Rails, REST APIs</p>
+                </div>
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/database.png" alt="Database Icon">
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, MongoDB, MySQL, Redis, GraphQL, Firestore</p>
+                </div>
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/cloud.png" alt="Cloud Icon"> 
+                    <h3>Cloud & DevOps</h3> 
+                    <p>AWS (EC2, S3, Lambda), Docker, Kubernetes, CI/CD, Git, Heroku, Netlify, Vercel</p>
+                </div>
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/tools.png" alt="Tools Icon">
+                    <h3>Tools & Methodologies</h3>
+                    <p>VS Code, Webpack, Babel, npm/Yarn, Agile/Scrum, TDD, Jest, Cypress</p>
+                </div>
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/uxui.png" alt="Design Icon">
+                    <h3>UI/UX Principles</h3>
+                    <p>Responsive Design, Accessibility (WCAG), User Research, Prototyping</p>
+                </div>
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/temenos.png" alt="Temenos Core Banking Icon">
+                    <h3>Temenos Core Banking</h3>
+                    <p>Customizing Temenos T24 Core Banking, Digital Banking Integration, TAFJ Installation and administration</p>
+                </div>
+                <div class="skill-item reveal-on-scroll">
+                    <img src="icons/jboss.png" alt="Jboss by redhat Icon">
+                    <h3>JBoss Application Server</h3>
+                    <p>Customizing JBoss by Redhat Application Server Installation, administration, and performance tuning</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal-on-scroll">
+                    <img src="images/equib1.png" alt="Equb Management System" loading="lazy">
+                    <div class="card-content">
+                        <h3>Equb Management System to Ahadu Bank Staff</h3>
+                        <p class="project-description">A comprehensive platform for managing Equb (traditional saving circles) with features for contribution tracking, member management, and automated payouts.</p>
+                        <div class="project-tech-stack">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe API</span>
+                        </div>
+                        <div class="project-links"> 
+                            <a href="https://live-demo-1.com" target="_blank" rel="noopener noreferrer" class="btn btn-demo">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/fkremariamn21" target="_blank" rel="noopener noreferrer" class="btn btn-code">GitHub Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-on-scroll">
+                    <img src="images/online-auction.jpg" alt="Project 2 Thumbnail: Online Auction Platform" loading="lazy">
+                    <div class="card-content">
+                        <h3>Online Auction Web Based Mobile Application</h3>
+                        <p class="project-description">Web based mobile application for Biraro Secondary and Preparatory school to create, bid on, select the winner,and manage online auctions in real-time.</p>
+                        <div class="project-tech-stack">
+                            <span>Java</span><span>Kotlin</span><span>Socket.IO</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://live-demo-2.com" target="_blank" rel="noopener noreferrer" class="btn btn-demo">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/fkremariamn21" target="_blank" rel="noopener noreferrer" class="btn btn-code">GitHub Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-on-scroll">
+                    <img src="images/clearance.png" alt="Project 3 Thumbnail: Student Clearance Management System" loading="lazy">
+                    <div class="card-content">
+                        <h3>Student Clearance Management System for Wollo University</h3>
+                        <p class="project-description">A comprehensive system for managing student clearance processes, including document verification and approval workflows.</p>
+                        <div class="project-tech-stack">
+                            <span>Laravel</span><span>Php</span><span>Html</span><span>css</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://live-demo-3.com" target="_blank" rel="noopener noreferrer" class="btn btn-demo">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/fkremariamn21" target="_blank" rel="noopener noreferrer" class="btn btn-code">GitHub Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Get In Touch</h2>
+            <p class="reveal-on-scroll">I'm always eager to connect, collaborate on exciting projects, or discuss new opportunities. Feel free to reach out!</p>
+            <div class="contact-info reveal-on-scroll">
+                <p>📧 Email: <a href="mailto:fkrman45@gmail.com">fkrman45@gmail.com</a></p> 
+                <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/fkremariam-nigatu-1b5392337" target="_blank" rel="noopener noreferrer">My LinkedIn profile</a></p>
+                <p>🐙 GitHub: <a href="https://github.com/fkremariamn21" target="_blank" rel="noopener noreferrer">My GitHub profile</a></p>
+                </div>
+        </div>
+    </section>
+
+    <footer class="main-footer"> 
+        <div class="container">
+            <p>&copy; 2025 Fkremariam Nigatu. All rights reserved.</p>
+            <div class="footer-social-links">
+                <a href="https://github.com/fkremariamn21" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="icons/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/fkremariam-nigatu-1b5392337" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+                </div>
+        </div>
+    </footer> 
+
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_CODE.js" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+    </body>
+</html>
