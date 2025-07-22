@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburgerMenu.classList.remove('active');
             navLinks.classList.remove('active');
             body.classList.remove('no-scroll'); 
-        });
+        }); 
     });
 
     // ----------------- Reveal-on-Scroll Animation -----------------
